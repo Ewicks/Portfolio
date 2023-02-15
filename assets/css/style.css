@@ -9,8 +9,8 @@
 /* Colors */
 
 :root {
-  --background-color: 1D1D1D;
-  --main-text-color: C3073F;
+  --background-color: #1A1A1D;
+  --main-text-color: #C3073F;
 }
 
 body {
@@ -19,25 +19,26 @@ body {
 
 .main-container {
   padding: 0px 150px;
-  background-color: #1D1D1D !important;
+  background-color: var(--background-color) !important;
 }
 
 section {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #1D1D1D;
+  background-color: var(--background-color);
 
 }
 
 /* Navbar */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   background-color: #1D1D1D;
   font-family: 'poppins', sans-serif;
+  padding: 0px 40px;
 }
 
 .logo {
@@ -73,7 +74,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #e31c1c;
+  background-color: var(--main-text-color);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -122,7 +123,6 @@ nav {
   left: 40px;
   right: auto;
   z-index: 10;
-  color: white;
 }
 .links-section-right {
   width: 40px;
@@ -131,7 +131,6 @@ nav {
   left: auto;
   right: 40px;
   z-index: 10;
-  color: white;
 }
 
 .social-links {
@@ -142,14 +141,13 @@ nav {
   margin: 0px;
   padding: 0px;
   list-style: none;
-  color: white;
 }
 
 
 .social-links li a i {
   font-size: 40px;
   margin: 20px;
-  color: white;
+  color: var(--main-text-color);
 }
 
 .social-links::after {
@@ -158,7 +156,14 @@ nav {
   width: 1px;
   height: 90px;
   margin: 0px auto;
-  background-color: white;
+  background-color: var(--main-text-color);
+}
+
+.email {
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  color: var(--main-text-color)
 }
 
 @media screen and (max-width: 1024px) {
