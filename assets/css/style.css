@@ -37,12 +37,13 @@ section {
 
 .hidden {
   opacity: 0;
-  transition: all 1.5s;
+  transition: all 2.5s;
 }
 
 .show {
   opacity: 1;
 }
+
 
 /* Navbar */
 nav {
@@ -94,7 +95,7 @@ nav {
 
 
 .nav-active {
-  transform: translateX(0%);
+  transform: translateX(0%) !important;
 }
 
 @keyframes navLinkFade {
@@ -253,11 +254,7 @@ p {
 
 #about {
   padding: 100px 0px;
-  min-height: 120vh;
-  /* visibility: visible;
-  opacity: 1;
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s; */
+  min-height: 100vh;
 }
 
 .numbered-heading {
@@ -320,12 +317,24 @@ p {
 
 @media screen and (max-width: 768px) {
 
+  .links-section-left {
+    display: none;
+  }
+  .links-section-right {
+    display: none;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+
   body {
     overflow-x: hidden;
   }
 
   .nav-links {
     position: absolute;
+    z-index: 9999999;
     right: 0px;
     height: 90vh;
     top: 10vh;
