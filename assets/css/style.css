@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300&display=swap');
 
 * {
   padding: 0;
@@ -10,10 +10,12 @@
 
 :root {
   --background-color: #1A1A1D;
-  --main-text-color: #C3073F;
+  --main-text-color: rgb(244, 7, 78);
 }
 
 body {
+  font-family: 'montserrat', sans-serif !important;
+  letter-spacing: 3px;
 
 }
 
@@ -35,14 +37,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 8vh;
-  background-color: #1D1D1D;
-  font-family: 'poppins', sans-serif;
+  min-height: 10vh;
+  background-color: var(--background-color);
   padding: 0px 40px;
 }
 
 .logo {
-  color: #C3073F;
+  color: var(--main-text-color);
   text-transform: capitalize;
   letter-spacing: 5px;
   font-size: 20px;
@@ -51,7 +52,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 40%;
 }
 
 .nav-links li {
@@ -116,11 +117,47 @@ p {
   color: #4e4e50;
 }
 
+.home-title {
+  font-size: 85px;
+  font-weight: 800;
+  /* color: var(--main-text-color); */
+  color: #ccd6f6 !important;
+  padding-top: 20px;
+  margin: 0px;
+}
+
+.home-subtitle {
+  font-size: 60px;
+  /* color: #C3073F; */
+  font-weight: 600;
+  color: #8892b0 !important;
+}
+
+.text {
+  color: rgb(199, 195, 195);
+  font-size: 17px;
+}
+
+.red-text {
+  color: #E10600 !important;
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0px;
+}
+
+#home {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: 100vh;
   padding: 0px;
 }
 
@@ -153,7 +190,7 @@ p {
 
 
 .social-links li a i {
-  font-size: 35px;
+  font-size: 25px;
   margin: 20px;
   color: var(--main-text-color);
   transition: all 0.3s ease-in-out;
@@ -179,6 +216,22 @@ p {
   color: var(--main-text-color)
 }
 
+.home-btn {
+  border: 1px solid var(--main-text-color) !important;
+  color: var(--main-text-color) !important;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.home-btn:hover {
+  background-color: rgb(244, 7, 78, .25);
+}
+
+/* Media Queries */
+
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
@@ -195,8 +248,8 @@ p {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 90vh;
+    top: 10vh;
     background-color:#6F2232;
     display: flex;
     flex-direction: column;
