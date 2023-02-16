@@ -108,6 +108,14 @@ nav {
 
 /* Home Page */
 
+h1 {
+  color: var(--main-text-color) !important
+}
+
+p {
+  color: #4e4e50;
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -145,9 +153,14 @@ nav {
 
 
 .social-links li a i {
-  font-size: 40px;
+  font-size: 35px;
   margin: 20px;
   color: var(--main-text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links li a i:hover {
+  transform: scale(1.2);
 }
 
 .social-links::after {
