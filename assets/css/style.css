@@ -26,11 +26,10 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   background-color: var(--background-color);
-
 }
 
 /* Slide in animations */
@@ -267,6 +266,8 @@ p {
   white-space: nowrap;
   color: var(--main-text-color);
   font-size: 30px; 
+  font-weight: 900;
+
 }
 
 .numbered-heading::after {
@@ -309,17 +310,28 @@ p {
 /* Projects Page */
 
 #projects {
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .projects-img {
   width: 100%;
-  height: 25%;
+  height: 500px;
   object-fit: cover;
+  display: flex;
+  margin: 0px auto;
 }
 
 .vertical-line {
-  border-left: 1px solid green;
+  border-left: 2px solid rgb(80, 79, 79);
+  height: 500px;
+  position: absolute;
+  left: 30%;
+  margin-left: -3px;
+  top: 10;
+}
+
+.vertical-line2 {
+  border-left: 2px solid rgb(80, 79, 79);
   height: 200px;
   position: absolute;
   left: 30%;
@@ -327,20 +339,33 @@ p {
   top: 10;
 }
 
-.vertical-line::after {
-  content: "-";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: var(--main-text-color);
-}
 
 .project-text {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  color: var(--light-gray-color);
+}
+
+.project-title {
+  color: var(--main-text-color);
   position: absolute;
   top: 70%;
   left: 40%;
 }
+
+.arrow {
+  color: rgb(80, 79, 79);
+  position: absolute;
+  top: 71%;
+  right: 68.8%;
+}
+
+.padding {
+  padding-bottom: 200px;
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
