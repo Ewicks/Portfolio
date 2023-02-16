@@ -40,3 +40,16 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Change Email Color
+const email = document.getElementById("email-button");
+
+email.addEventListener("mouseover", (event) => {
+    // highlight the mouseover target
+    document.getElementById('email-address').style.color = "white";
+  
+    // reset the color after a short delay
+    setTimeout(() => {
+    document.getElementById('email-address').style.color = "#f4074e";
+    }, 900);
+  }, false);
