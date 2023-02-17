@@ -382,17 +382,20 @@ p {
 }
 
 .tech-buttons {
-  position: absolute;
-  top: 97%;
-  right: 60%;
-  width: 50px;
-  height: 30px;
+  width: 80px;
+  height: 60px;
   border: 1px solid white;
   border-radius: 10px;
+  font-size: 20px;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--bs-gray-500);
 }
 
-.tech-buttons li a{
-  
+.test-btn {
+  position: absolute;
+  top: 90%;
+  right: 35%;
 }
 
 /* Media Queries */
