@@ -26,7 +26,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   position: relative;
   background-color: var(--background-color);
@@ -186,7 +186,6 @@ p {
   min-height: 80vh;
   height: 80vh;
   padding: 0px;
-  margin-bottom: 10vh;
 }
 
 .links-section-left {
@@ -262,7 +261,7 @@ p {
 /* About Section */
 
 #about {
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .numbered-heading {
@@ -305,10 +304,10 @@ p {
 
 .profile-pic {
   width: 100%;
-  height: 50%;
+  height: 400px;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 50%;
 
 }
 
@@ -318,9 +317,6 @@ p {
 
 /* Projects Page */
 
-#projects {
-  min-height: 100vh;
-}
 
 .projects-img {
   width: 100%;
@@ -330,18 +326,17 @@ p {
   margin: 0px auto;
 }
 
-.vertical-line {
-  border-left: 2px solid rgb(80, 79, 79);
+.project-video {
+  width: 100%;
   height: 500px;
-  position: absolute;
-  left: 30%;
-  margin-left: -3px;
-  top: 10;
+  display: flex;
+  margin: 0px auto;
+  position: relative;
 }
 
-.vertical-line2 {
+.vertical-line {
   border-left: 2px solid rgb(80, 79, 79);
-  height: 200px;
+  height: 2000px;
   position: absolute;
   left: 30%;
   margin-left: -3px;
@@ -350,45 +345,36 @@ p {
 
 
 .project-text {
-  position: absolute;
-  top: 75%;
-  left: 40%;
   color: var(--light-gray-color);
 }
 
 .project-title {
   color: var(--main-text-color);
-  position: absolute;
-  top: 70%;
-  left: 40%;
 }
 
 .arrow {
   color: rgb(80, 79, 79);
   position: absolute;
-  top: 71%;
-  right: 68.8%;
-}
-
-.padding {
-  padding-bottom: 200px;
+  top: 42.2%;
+  right: 69.2%;
 }
 
 .proj-1-description {
-  width: auto;
+  width: 300px;
+  height: 300px;
   padding: 0px 20px;
 }
-
-.proj1-repo {
-  position: absolute;
-  top: 97%;
-  right: 50%;
-}
-
 
 .fa-brands {
   color: var(--light-gray-color);
   font-size: 25px;
+  margin-top: 20px;
+  color: var(--main-text-color);
+  transition: all 0.3s ease-in-out;
+
+}
+.fa-brands:hover {
+  transform: scale(1.2);
 }
 
 .tech-buttons {
@@ -399,13 +385,8 @@ p {
   font-size: 20px;
   padding: 5px;
   text-decoration: none;
-  color: var(--bs-gray-500);
-}
-
-.test-btn {
-  position: absolute;
-  top: 90%;
-  right: 35%;
+  background-color: rgb(244, 7, 78, .25);
+  color: var(--bs-code-color)
 }
 
 /* Media Queries */
