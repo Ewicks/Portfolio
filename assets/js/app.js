@@ -2,9 +2,13 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    const homepage = document.getElementById('home')
     burger.addEventListener('click', ()=> {
         // Toggle nav
         nav.classList.toggle('nav-active');
+
+        // Toggle blur effect
+        homepage.classList.toggle("blur-effect")
 
         // Animate Links
         navLinks.forEach((link, index) => {
@@ -19,7 +23,10 @@ const navSlide = () => {
 
         //Burgar Animation
         burger.classList.toggle('toggle');
+
+        
     });
+
     
 }
 

@@ -32,6 +32,16 @@ section {
   background-color: var(--background-color);
 }
 
+/* Blur Effect */
+.blur-effect {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Slide in animations */
 
 .hidden {
