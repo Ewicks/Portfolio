@@ -252,7 +252,6 @@ p {
 /* About Section */
 
 #about {
-  padding: 100px 0px;
   min-height: 100vh;
 }
 
@@ -365,6 +364,36 @@ p {
   padding-bottom: 200px;
 }
 
+.proj-1-description {
+  width: auto;
+  padding: 0px 20px;
+}
+
+.proj1-repo {
+  position: absolute;
+  top: 97%;
+  right: 50%;
+}
+
+
+.fa-brands {
+  color: var(--light-gray-color);
+  font-size: 25px;
+}
+
+.tech-buttons {
+  position: absolute;
+  top: 97%;
+  right: 60%;
+  width: 50px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.tech-buttons li a{
+  
+}
 
 /* Media Queries */
 
