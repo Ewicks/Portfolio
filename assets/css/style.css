@@ -309,14 +309,7 @@ p {
   border: 2px solid var(--main-text-color)
 }
 
-
-
-/* .profile-pic:hover {
-  transform: scale(1.1);
-} */
-
 /* Projects Page */
-
 
 .projects-img {
   width: 100%;
@@ -431,8 +424,6 @@ p {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
 
-
-
 .card:hover {
   transform: translateY(-7px);
 }
@@ -469,7 +460,6 @@ p {
 }
 
 .email-link:hover {
-  /* color: var(--light-gray-color) */
   background-color: rgb(244, 7, 78, .25);
   color: var(--light-gray-color);
 }
@@ -481,7 +471,6 @@ p {
   display: flex;
   justify-content: space-around;
 }
-
 
 /* Media Queries */
 
@@ -536,102 +525,3 @@ p {
     display: block;
   }
 }
-
-
-/* test */
-   
-
-/* .container {
-    background-color: rgb(252, 232, 143);
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-} */
-
-.test {
-  flex-direction: column;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-}
-
-
-.slide-wrapper {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-  min-height: 200px;
-  width: 400vw;
-  padding: 2rem 1rem;
-  animation: slide 10s infinite linear;
-}
-
-.slide-wrapper:has(.slide:hover) .slide:not(:hover) {
-    animation: shrink 4s forwards;
-}
-
-.slide:hover {
-    animation: grow 4s forwards;
-}
-
-.slide {
-    height: fit-content;
-    padding: .75rem;
-    margin-right: 3rem;
-    border-radius: .25rem;
-    background-color: rgb(82, 0, 82);
-    border: 2px solid black;
-    box-shadow: 3px 3px 0px black;
-}
-
-.tool {
-  width: 100px;
-}
-
-.media-wrapper img {
-    width: 50px;
-    height: 50px;
-    padding: 1rem;
-    border-radius: .25rem;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 3px 3px 0px black;
-}
-
-
-
-
-
-@keyframes slide {
-    0% {
-        transform: translateX(1%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-@keyframes shrink {
-    0% {
-        scale: 1;
-        filter: blur(0px);
-    }
-    100% {
-        scale: .75;
-        filter: blur(1px);
-    }
-}
-
-@keyframes grow {
-    0% {
-        scale: 1;
-    }
-    100% {
-        scale: 1.2;
-        box-shadow: 4px 4px 2px black;
-    }
-}
-
-
