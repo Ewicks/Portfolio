@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/b2fe83387a.js" crossorigin="anonymous"></script>
-    <script defer src="assets/js/app2.js"></script>
     <title>Ethan Wicks</title>
 </head>
 <body>
@@ -45,7 +44,7 @@
                         <div class="links-section-left">
                             <ul class="social-links">
                                 <li>
-                                    <a href="">
+                                    <a href="https://github.com/Ewicks">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
                                 </li>
@@ -86,7 +85,7 @@
             </div>
            
         </section>
-        <section class="hidden pb-5">
+        <section id="about" class="hidden pb-5">
             <div class="container">
             <h2 class="numbered-heading">About me </h2>
                 <div class="row">
@@ -103,9 +102,26 @@
                         <img src="assets/images/profile-pic.jpg" class="profile-pic" alt="">
                     </div>
                 </div>
+                <!-- <div class="row">
+                    <div class="col-12">
+                        <div class="test">
+                            <div class="slide-wrapper">
+                                <div v-for="image in images" class="slide">
+                                    <img class="tool" :src="image" alt="images from my personal website">
+                                </div>
+                                <div v-for="image in images" class="slide">
+                                    <img class="tool" :src="image" alt="images from my personal website">
+                                </div>
+                                                    
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div> -->
             </div>
         </section>
-        <section class="hidden">
+        <section id="projects" class="hidden">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -142,29 +158,200 @@
 
             <div class="row my-5">
                 <div class="col-12 my-5">
-                    <video controls loop class="project-video">
+                    <video autoplay loop muted class="project-video">
                         <source src="assets/videos/ivory-vid.mov" class="project-video" type="video/mp4">
                     </video>
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
-                    
-                </div>
+                <div class="col-4"></div>
                 <div class="col-8 my-5">
                     <h1 class="mt-5">testing</h1>
-                    <h3 class="project-title">HEre is example</h3>
                     <p class="project-text">paskd paskd paoskd paosdk paokds a <br> sdfsd fsdf sdf sdf sdf sdf sbr sfsd fsdf sdf sdf sdf sdf ssdf sdf sdf s sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf</p>
-                    <div class="test-btn">
+                    <div class="test-btn mb-3">
                         <a class="tech-buttons" href="">Django</a>
                         <a class="tech-buttons" href="">Python</a>
                         <a class="tech-buttons" href="">Postgresql</a>
                     </div>
-                    <a class="proj1-repo" href=""> Open Project 
-                        <i class="fa-brands fa-github"></i>
-                    </a>
+                    <div class="links">
+                        <a target="_blank" class="proj-link" href="https://github.com/Ewicks/Ivory-e-commerce">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a target="_blank" class="proj-link mt-4" href="https://ivory-e-commerce.herokuapp.com/">Open Project
+                            <i class="fa-solid fa-arrow-right open-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 my-5">
+                    <video autoplay loop muted class="project-video">
+                        <source src="assets/videos/ivory-vid.mov" class="project-video" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8 my-5">
+                    <h1 class="mt-5">testing</h1>
+                    <p class="project-text">paskd paskd paoskd paosdk paokds a <br> sdfsd fsdf sdf sdf sdf sdf sbr sfsd fsdf sdf sdf sdf sdf ssdf sdf sdf s sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf</p>
+                    <div class="test-btn mb-3">
+                        <a class="tech-buttons" href="">Django</a>
+                        <a class="tech-buttons" href="">Python</a>
+                        <a class="tech-buttons" href="">Postgresql</a>
+                    </div>
+                    <div class="links">
+                        <a target="_blank" class="proj-link" href="">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a target="_blank" class="proj-link mt-4" href="">Open Project
+                            <i class="fa-solid fa-arrow-right open-arrow"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             
+        </section>
+
+        <section class="py-5">
+            <h1 class="text-center my-5">Other projects</h1>
+            <div class="container">
+
+                <!-- Card deck -->
+                <div class="card-deck row row-gap">
+                
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <!-- Card -->
+                    <div class="card p-3">
+                        <div class="top-half d-flex justify-content-between ">
+                            <div class="div">
+                                <p class="m-0">test</p>
+                            </div>
+                            <div class="div">
+                                <i class="fa-brands fa-github m-0"></i>
+                                <a target="_blank" class="proj-link m-0" href="">Open Project
+                                    <i class="fa-solid fa-arrow-right open-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-technologies m-0">Technologies </p>
+                        </div>
+                    </div>
+                  </div>
+                
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <!-- Card -->
+                    <div class="card p-3">
+                        <div class="top-half d-flex justify-content-between ">
+                            <div class="div">
+                                <p class="m-0">test</p>
+                            </div>
+                            <div class="div">
+                                <i class="fa-brands fa-github m-0"></i>
+                                <a target="_blank" class="proj-link m-0" href="">Open Project
+                                    <i class="fa-solid fa-arrow-right open-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-technologies m-0">Technologies </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <!-- Card -->
+                    <div class="card p-3">
+                        <div class="top-half d-flex justify-content-between ">
+                            <div class="div">
+                                <p class="m-0">test</p>
+                            </div>
+                            <div class="div">
+                                <i class="fa-brands fa-github m-0"></i>
+                                <a target="_blank" class="proj-link m-0" href="">Open Project
+                                    <i class="fa-solid fa-arrow-right open-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-technologies m-0">Technologies </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <!-- Card -->
+                    <div class="card p-3">
+                        <div class="top-half d-flex justify-content-between ">
+                            <div class="div">
+                                <p class="m-0">test</p>
+                            </div>
+                            <div class="div">
+                                <i class="fa-brands fa-github m-0"></i>
+                                <a target="_blank" class="proj-link m-0" href="">Open Project
+                                    <i class="fa-solid fa-arrow-right open-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-technologies m-0">Technologies </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <!-- Card -->
+                    <div class="card p-3">
+                        <div class="top-half d-flex justify-content-between ">
+                            <div class="div">
+                                <p class="m-0">test</p>
+                            </div>
+                            <div class="div">
+                                <i class="fa-brands fa-github m-0"></i>
+                                <a target="_blank" class="proj-link m-0" href="">Open Project
+                                    <i class="fa-solid fa-arrow-right open-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-technologies m-0">Technologies </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <!-- Card -->
+                    <div class="card p-3">
+                        <div class="top-half d-flex justify-content-between ">
+                            <div class="div">
+                                <p class="m-0">test</p>
+                            </div>
+                            <div class="div">
+                                <i class="fa-brands fa-github m-0"></i>
+                                <a target="_blank" class="proj-link m-0" href="">Open Project
+                                    <i class="fa-solid fa-arrow-right open-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-technologies m-0">Technologies </p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
         </section>
 
        
@@ -172,6 +359,21 @@
    
     
       <!-- Javascript -->
+      <!-- <script setup>
+        const images = [
+        ''
+        'https://kylebruns.xyz/javascript.png',
+        'https://kylebruns.xyz/vue.png',
+        'https://kylebruns.xyz/three.png', 
+        'https://kylebruns.xyz/nuxt.png', 
+        'https://kylebruns.xyz/netlify.png', 
+        'https://kylebruns.xyz/python.png',
+        'https://kylebruns.xyz/fauna.png',
+        'https://kylebruns.xyz/express.png'
+        ]
+    
+    </script> -->
+    
       <script src="assets/js/app.js"></script>
 </body>
 </html>
