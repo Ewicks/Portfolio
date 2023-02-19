@@ -264,6 +264,21 @@ p {
   background-color: rgb(244, 7, 78, .25);
 }
 
+.cv-btn {
+  margin-left: 20px;
+  border: 1px solid var(--light-gray-color) !important;
+  color: var(--light-gray-color) !important;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.cv-btn:hover {
+  background-color: rgb(204, 214, 246, .25);
+}
+
 
 /* About Section */
 
