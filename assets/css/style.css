@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +6,8 @@
 }
 
 body {
+  font-family: roboto; 
+  letter-spacing: 3px;
   background-color: var(--background-color) !important;
 }
 
@@ -18,12 +19,6 @@ body {
   --light-gray-color: #CCD6F6;
 }
 
-body {
-  font-family: 'montserrat', sans-serif !important;
-  letter-spacing: 3px;
-
-}
-
 .main-container {
   padding: 0px 100px;
   background-color: var(--background-color) !important;
@@ -33,6 +28,22 @@ section {
   width: 100%;
   position: relative;
   background-color: var(--background-color);
+}
+
+/* Scroll Wheel */
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-color);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-text-color);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--main-text-color);  /* creates padding around scroll thumb */
 }
 
 /* Blur Effect */
@@ -163,7 +174,6 @@ p {
   font-size: 14px;
   letter-spacing: 0px !important;
   line-height: 25px;
-  font-family: monospace;
 }
 
 .red-text {
@@ -332,6 +342,7 @@ p {
 .about-text {
   height: 500px;
   overflow: auto;
+  letter-spacing: 0px;
 }
 
 /* Projects Page */
@@ -346,7 +357,7 @@ p {
 
 .project-video {
   width: 80%;
-  height: 500px;
+  height: 100%;
   display: flex;
   margin: 0px auto;
   position: relative;
@@ -358,12 +369,12 @@ p {
   position: absolute;
   left: 30%;
   margin-left: -3px;
-  top: 10;
 }
 
 
 .project-text {
   color: var(--light-gray-color);
+  letter-spacing: 0px;
 }
 
 .project-title {
@@ -412,12 +423,22 @@ p {
 
 .tech-buttons {
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 20px;
   padding: 5px;
   text-decoration: none; 
-  background-color: rgb(244, 7, 78, .25);
-  color: var(--bs-code-color)
+  /* background-color: rgb(244, 7, 78, .25); */
+  /* color: var(--bs-code-color) */
+}
+
+.tech-buttons:nth-child(odd) {
+  background-color: var(--light-gray-color);
+  color: #2b2e39;
+}
+
+.tech-buttons:nth-child(even) {
+  background-color: #2b2e39;
+  color: var(--light-gray-color)
 }
 
 .open-arrow {
@@ -479,6 +500,11 @@ p {
   text-align: center;
 }
 
+.contact-form p {
+  color: var(--light-gray-color) !important;
+  letter-spacing: 2px;
+}
+
 .email-link {
   text-decoration: none;
   color: var(--main-text-color);
@@ -492,7 +518,6 @@ p {
   background-color: rgb(244, 7, 78, .25);
   color: var(--light-gray-color);
 }
-
 
 /* Footer Links */
 
