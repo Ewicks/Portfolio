@@ -344,7 +344,7 @@ p {
 }
 
 .about-text {
-  height: 500px;
+  height: 100%;
   overflow: auto;
   letter-spacing: 0px;
 }
@@ -664,5 +664,13 @@ p {
 
   .home-btn {
     margin: 20px 0px;
+  }
+
+  .profile-pic {
+    display: none;
+  }
+
+  .about-img {
+    display: none;
   }
 }
