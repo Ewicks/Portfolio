@@ -58,3 +58,13 @@ email.addEventListener("mouseover", (event) => {
     document.getElementById('email-address').style.color = "#f4074e";
     }, 900);
   }, false);
+
+
+// Pre Loader
+document.addEventListener("DOMContentLoaded", function () {
+    // on page load, hide the preloader animation
+    document.getElementById("preloader").style.opacity = 0;
+    setTimeout(() => {
+        document.getElementById("preloader").remove();
+    }, 5000);
+});
